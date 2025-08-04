@@ -47,3 +47,4 @@ next-env.d.ts
 # devtools
 /posts/dev
 /postMetadata/dev
+/public/json/dev

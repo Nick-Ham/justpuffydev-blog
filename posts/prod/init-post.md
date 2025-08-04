@@ -1,6 +1,52 @@
 ---
-title: "Init Post"
-date: "2025-08-01"
+title: "First Post... bringing justpuffy.dev to life"
+date: "2025-08-04"
 ---
 
-Welcome to my blog. 
+**"Blog will be simple," I said.**
+
+**"You are an experienced engineer, it's just web stuff," I said.**
+
+***"Oh no,"*** **I said.**
+
+Well, I was kinda right in the end.
+
+Welcome to my blog. I don't really have a particular goal in mind yet for it, I just know that I wanted to do it. I
+think I told myself a few times that I wouldn't go too deep — that this is just to understand full stack memes... (*I
+still don't understand full stack memes*)...
+
+…the truth is I feel horribly incompetent all the time. I’m self-taught, I didn’t finish my degree (for various reasons,
+maybe that’ll be a later post), and I feel like I’m constantly the dumbest one in the room when I’m around other
+engineers. The only salve I've found over the years for this constant feeling of ‘not enough’ is to keep learning; to
+keep feeding the endless starvation for knowledge. I don't know many other people like me, but I’d like to. So here we
+are.
+
+So what even *is* this blog?
+
+Well, in the future? Maybe something interesting to me as a complete full stack project. For now? This is what I’ve done
+so far:
+
+- Secured a domain name
+- Created an empty Next.js app
+- Deployed it with Vercel
+- Started with post loading
+- Realized through searching that people generally use CMS to handle post loading
+- “Im way too cool for that”
+- Implement post loading
+- Implement post metadata caching, hashing posts to force regeneration on edit
+- Implement byte limited infinite scroll based on cached post sizes
+- Learn the difference between normal .ts scripts and react components
+- Brain boom at generative html (i did like 2 months of web stuff pre-angular days for a very small, not very hip,
+  company)
+- Start componentizing everything like you would do with gamedev
+- Figure out how to use tailwind
+- Struggle with tailwind
+- Continue to have fun?... after getting tailwind to work
+
+Right now this isn't much, and I'm sure any experienced fullstack could’ve done this in an hour, instead of a weekend.
+But y’know? It was fun. It was a nice escape from the c++ system work I’m used to - it lets me keep learning. For a bit,
+that starvation is a little more bearable. I’ll most likely catalog a bit of the process here in following posts, and as
+I go, when I feel like I’m missing a feature, I’ll try to support it. Maybe in the end I’ll have my first ever open
+source library CMS to give to the world.
+
+**Thanks for coming.**

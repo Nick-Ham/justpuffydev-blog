@@ -1,21 +1,24 @@
 import fs from 'fs';
 
-import { getAllMetadata } from '@/lib/postMetadataBuilder';
-import { PostMetadata } from '@/lib/types';
-import { postMetadataJson } from '@/lib/publicDataLibraryPaths';
-import { sortMetadataByRecent } from '@/lib/typeSorters';
+import {getAllMetadata} from '@/lib/postMetadataBuilder';
+import {PostMetadata} from '@/lib/types';
+import {postMetadataJson} from '@/lib/publicDataLibraryPaths';
+import {getPublicJsonPath} from "@/lib/paths";
+import {sortMetadataByRecent} from '@/lib/typeSorters';
 
 function generatePublicMetadataJSON(): void {
-	const allMetadata: PostMetadata[] = getAllMetadata();
-	sortMetadataByRecent(allMetadata);
-	
-	const outputPath: string = postMetadataJson;
+    const allMetadata: PostMetadata[] = getAllMetadata();
+    sortMetadataByRecent(allMetadata);
 
-	fs.writeFileSync(outputPath, JSON.stringify(allMetadata, null, 3));
+    const outputPath: string = postMetadataJson;
+
+    fs.mkdirSync(getPublicJsonPath(), {recursive: true});
+
+    fs.writeFileSync(outputPath, JSON.stringify(allMetadata, null, 3));
 }
 
 function run() {
-	generatePublicMetadataJSON();
+    generatePublicMetadataJSON();
 }
 
 run();

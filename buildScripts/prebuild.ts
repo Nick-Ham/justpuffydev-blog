@@ -1,8 +1,8 @@
 import * as buildScriptHelper from '@/buildScripts/buildScriptHelpers';
-import { cook } from '@/buildScripts/cook';
+import {cook} from '@/buildScripts/cook';
 
 function main() {
-	cook();
+    cook("production");
 }
 
 main();
