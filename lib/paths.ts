@@ -16,23 +16,23 @@ const devPostMetadataPath = path.join(postMetadataBase, devSubfolder);
 const prodPostMetadataPath = path.join(postMetadataBase, prodPostsPath);
 
 function getIsDev(): boolean {
-	return process.env.NODE_ENV !== 'production';
+    return process.env.NODE_ENV !== 'production';
 }
 
 export function getActivePostsPath(): string {
-	const isDev = getIsDev();
-	return isDev ? devPostsPath : prodPostsPath;
+    const isDev = getIsDev();
+    return isDev ? devPostsPath : prodPostsPath;
 }
 
 export function getActivePostMetadataPath(): string {
-	const isDev = getIsDev();
-	return isDev ? devPostMetadataPath : prodPostMetadataPath;
+    const isDev = getIsDev();
+    return isDev ? devPostMetadataPath : prodPostMetadataPath;
 }
 
 export function getPublicJsonPath(): string {
-	return path.join(publicDir, jsonSubfolder);
+    return path.join(publicDir, jsonSubfolder);
 }
 
 export function getPublicPath(): string {
-	return publicDir;
+    return publicDir;
 }
