@@ -2,10 +2,10 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 
-import { PostData } from './types';
+import { PostData } from '../types/types';
 
-import { getActivePostsPath } from '@/lib/paths';
-import * as postParserHelper from '@/lib/postParserHelper';
+import { getActivePostsPath } from '@/src/paths';
+import * as postParserHelper from '@/src/posts/postParserHelper';
 
 export function getPostData(inFileName: string): PostData {
 	const id = inFileName.replace(/\.md$/, '');

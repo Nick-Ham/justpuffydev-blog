@@ -1,7 +1,7 @@
 import fs from 'fs';
 
-import { PostMetadata } from '@/lib/types';
-import { postMetadataJson } from '@/lib/publicDataLibraryPaths';
+import { PostMetadata } from '@/src/types/types';
+import { postMetadataJson } from '@/src/publicDataLibraryPaths';
 
 export function getPostMetadata(): PostMetadata[] {
 	let posts: PostMetadata[] = [];

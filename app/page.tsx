@@ -1,5 +1,5 @@
-import PostList from '@/components/PostList';
-import PostTitle from "@/components/PageTitle";
+import PostList from '@/src/components/PostList';
+import PostTitle from "@/src/components/PageTitle";
 
 
 export default function Home() {

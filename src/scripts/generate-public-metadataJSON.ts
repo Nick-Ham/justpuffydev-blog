@@ -1,10 +1,10 @@
 import fs from 'fs';
 
-import {getAllMetadata} from '@/lib/postMetadataBuilder';
-import {PostMetadata} from '@/lib/types';
-import {postMetadataJson} from '@/lib/publicDataLibraryPaths';
-import {getPublicJsonPath} from "@/lib/paths";
-import {sortMetadataByRecent} from '@/lib/typeSorters';
+import {getAllMetadata} from '@/src/posts/postMetadataBuilder';
+import {PostMetadata} from '@/src/types/types';
+import {postMetadataJson} from '@/src/publicDataLibraryPaths';
+import {getPublicJsonPath} from "@/src/paths";
+import {sortMetadataByRecent} from '@/src/posts/postSortHelper';
 
 function generatePublicMetadataJSON(): void {
     const allMetadata: PostMetadata[] = getAllMetadata();

@@ -1,4 +1,4 @@
-import { PostMetadata } from '@/lib/types';
+import { PostMetadata } from '@/src/types/types';
 
 export function sortMetadataByRecent(metadata: PostMetadata[]) {
 	metadata.sort((a, b) => {

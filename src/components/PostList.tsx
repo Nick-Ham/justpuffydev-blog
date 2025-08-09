@@ -1,11 +1,11 @@
 'use client';
 
-import Post from '@/components/Post';
-import type {PostData} from '@/lib/types';
+import Post from '@/src/components/Post';
+import type {PostData} from '@/src/types/types';
 import {useEffect, useRef, useState} from 'react';
 
 const fetchPostsGetURL: string = '/api/fetchPosts?';
-const fetchPostsParamsLastIDString: string = 'lastId=';
+const lastIdParam: string = 'lastId';
 
 function getLastID(inPosts: PostData[]): string | null {
     if (inPosts.length <= 0) {
@@ -28,10 +28,10 @@ export default function PostList() {
         try {
             const params = new URLSearchParams();
             const lastId = getLastID(posts);
-            if (lastId) params.append('lastId', lastId);
+            if (lastId) params.append(lastIdParam, lastId);
 
             const fullURL = fetchPostsGetURL + params.toString();
-            const res = await fetch(fullURL);
+            const res = await fetch(fullURL, {method: 'GET'});
             if (!res.ok) {
                 console.log(fullURL);
                 throw new Error('No Response from fetch');

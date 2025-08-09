@@ -1,6 +1,6 @@
 'use client';
 
-import * as blogData from '@/lib/blogData'
+import * as blogData from '@/public/blogData'
 
 export default function PostTitle({}: {}) {
     return (

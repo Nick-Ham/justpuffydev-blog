@@ -3,7 +3,7 @@
 import ReactMarkdown from 'react-markdown';
 import remarkBreaks from 'remark-breaks';
 
-import {PostData} from '@/lib/types';
+import {PostData} from '@/src/types/types';
 
 export function normalizeMarkdownLineBreaks(content: string): string {
     // Normalize line endings

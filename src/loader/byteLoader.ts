@@ -1,6 +1,6 @@
-import { PostData, PostMetadata } from '@/lib/types';
-import { getPostMetadata } from '@/lib/postMetadataLoader';
-import { getPostData } from '@/lib/postDataBuilder';
+import { PostData, PostMetadata } from '@/src/types/types';
+import { getPostMetadata } from '@/src/posts/postMetadataLoader';
+import { getPostData } from '@/src/posts/postDataBuilder';
 
 const BYTE_BUDGET: number = 2 * 1024; //128 * 1024;
 

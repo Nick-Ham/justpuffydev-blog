@@ -3,7 +3,7 @@ console.log('Fake Post Generator Running...');
 import fs from 'fs';
 import path from 'path';
 
-import {getActivePostsPath} from '@/lib/paths';
+import {getActivePostsPath} from '@/src/paths';
 
 const NUM_POSTS = 50;
 

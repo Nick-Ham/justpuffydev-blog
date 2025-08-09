@@ -5,28 +5,28 @@ date: "2025-08-04"
 
 I failed an Amazon OA today.
 
-I'm a 4+ year engineer, been programming on and off since I was 14, and my brain runs at the speed of a tortoise. That fact is now public record in the form of this post.
+I'm a software engineer with 4 years of experience making performant, complex, systems. I have a drive to learn more and get better that very few people in my professional and personal life seem to match... and yet I still failed an Amazon OA. That fact is now public record in the form of this post.
 
-Why am I sharing this? To prove myself a failure? Not really. I want to paint a picture of what this experience has been like — how it’s humbling, how it’s not, and what I’m going to do from here. Maybe if you’re a newgrad you might feel a little better knowing someone with experience is struggling too. And maybe it’ll be useful to someone out there who's still figuring out what kind of engineer they want to be.
+Why am I sharing this? To prove myself a failure? Not exactly. I want to paint a picture of what this experience has been like — how it’s humbling, how it’s not, and what I’m going to do from here. Maybe if you’re a new-grad you might feel a little better knowing someone with experience is struggling too. And maybe it’ll be useful to someone out there who's still figuring out what kind of engineer they want to be. When everyone else is speeding past, sometimes I feel like a tortoise.
 
 ### Background: Engineer vs Engine Man
 
-First of all, my experience; I did not graduate college. I *went*, but I hated my classes so much (mostly random things I thought were useless) and the only programming classes I had were things I could’ve aced in my sleep years prior. I eventually withdrew, feeling guilty that I was wasting someone else's money on school that seemed to not be any help. Since then, I've spent most of my time working in game engines, making a mix of C++ engine work and scripts in GDScript. *Most* of that time is spent professionally in Unreal, at a job I got about a year after dropping out of school, but probably an equivalent amount is spent of my own time working on my own projects in Godot. Feel free to go look at my repos on my [GitHub][1] (The source for this site is on there too, please go roast me if you want). Because this hasn't been very 'normal' CS dev work, I never have (and still don't) feel like an engineer.
+First of all, my experience; I did not graduate college. I *went*, but I eventually withdrew, feeling guilty that I was wasting someone else's money on school that seemed to not really be giving me an education. Since then, I've spent most of my time working in game engines or making tiny tool projects, making a mix of C++ engine work and scripts in GDScript. *Most* of that time is spent professionally in Unreal, at a job I got about a year after dropping out of school, but probably an equivalent amount is spent of my own time working on my own projects in Godot. Feel free to go look at my repos on my [github][1] (The source for this site is on there too, please go roast me if you want). Because this hasn't been very 'normal' CS dev work, I never have (and still don't) feel like an engineer.
 
 ### Game Dev Experience or Big Tech
 
-The cool part about experience in game engines is that I think games are actually pretty complex and iterative pieces of adaptive software. If you want to grow your system and architecture chops *really* fast, I think they are the best thing to work in. You can only get away with shoving everything into a player script before you run into some severe limitations, and even industry professionals struggle with how complex certain things like behavior trees and state machines can get. To use this blog as an example, it is simple, is technically a complete MVP, and is significantly less complex than getting basically any reasonable MVP running for a game. The downside of this experience is I’m not sure I want to go into gamedev anymore ... and now I don't know what to do about it.
+Experience in game dev is a bit weird. On the one hand, the engine-specific things you learn don't really translate well to other tools. You might gain a sort of general tool-learning capability, but if we are being realistic: understanding actor lifecycle in unreal does not help you become a good backend dev. On the other hand, if you want to grow your system and architecture chops *really* fast, I think games are great to work in. You can only get away with shoving everything into a player script before you run into some severe limitations, and even industry professionals struggle with how complex certain things like behavior trees and state machines can get. The iterative nature of game dev makes you fail *a lot*, and at least in my opinion, having to use a bad system you made is the fastest way to become a good system designer. Normal software work just does not seem to have that same rapid scale and iteration in your average role. To use this blog as an example, it is simple, is technically a complete MVP, and is significantly less complex than getting basically any reasonable MVP running for a game. There is absolutely complex software out there, I'm not saying 'gamedev is the hardest!'. I just think you are allowed to get away with a lot less before you do not have a functioning product, let alone a good one.
 
-Down the rabbit hole of listings and trying to figure out what other lower level engineers focus on *in the real world*, I've discovered a few things:
+But now I think I've done maybe *too much* gamedev, and the passion I thought I had for it is dwindling, leaving a hole that only drive has filled; directionless drive. What now? How do I keep growing? Down the rabbit hole of listings I went trying to figure out what other lower level engineers focus on *in the real world*, I've discovered a few things:
 
-1. Full stack seems to be like 80% of listings. So uh, here we are
-2. If you want to actually progress in your career and be forced to grow and adapt, FAANG is probably where it’s at (or some startup that will make you sink or swim)
+1. Full stack seems to be like 80% of listings. So uh, here we are. I'm building a blog.
+2. If you want to actually progress in your career and be forced to grow and adapt, FAANG is probably where it’s at (or some startup that will make you sink or swim).
 
-Not necessarily those letters or in that order, but '***Big Tech***'. I never even pictured myself thinking about trying for big tech, since I always thought I was too dumb for it. But where brain small, motivation Big!... or something like that.
+Not necessarily those letters or in that order, but ***'Big Tech'***. I never even pictured myself thinking about trying for big tech, since I always thought I was too dumb for it. But where brain small, motivation Big!... or something like that.
 
 ### YeetCode
 
-I felt like I was ready for the long game, and started applying months ago. I went so long with no responses, getting ghosted, changing my resume, trying on a different hat, that when I finally got invited to take Amazon's OA, I actually thought it was some sort of filter just to get me to stop applying. And yet there I was, with less than a week to take it. I knew it would be 2 LeetCode problems and some other jazz, though the other jazz didn't scare me. Why wasn’t I practicing LeetCode in that whome time I was applying? Well, I did do *some*, but mainly: I thought my gamedev work and side projects *were* my practice. I figured:
+I felt like I was ready for the long game, and started applying months ago. I went so long with no responses, getting ghosted, changing my resume, trying on a different hat, that when I finally got invited to take Amazon's OA, I actually thought it was some sort of filter just to get me to stop applying. And yet there I was, with less than a week to take it. Two LeetCode problems and some other jazz, though the other jazz didn't scare me. Why wasn’t I practicing LeetCode in that whole time I was applying? Well, I did do *some*, but mainly: I thought my gamedev work and side projects *were* my practice. I figured:
 
 > I've been an engineer for awhile... maybe I can cram LeetCode?
 
@@ -34,11 +34,11 @@ I cannot cram the LeetCode.
 
 ### Realizing I'm Getting Gapped
 
-Maybe someone can, but ***I*** can't. I discovered very quickly just how hard deciphering LeetCode yourself is — particularly when you are missing the fundamental algorithms that I guess a lot of undergrads learn in those later classes I never got to experience. I've designed systems for game work that have to be performant (enough for a real-time game environment). I've had to optimize networking bandwidth to keep the client as close as possible, set up ai batching to keep too much navigation off of tick... but I never really learned just how powerful `std::unordered_map`, or how easy it is to get access down to O(1). I can tell from hearing a customer or user issue what system needs to be built and where the bottlenecks will be... but I couldn't figure out in 45 minutes how to rebuild a wildcard pattern matcher. I’ve built so many bad systems and tools over the years, that I understand the importance of event-driven architecture, or component and decoration led tooling... **but I didn’t know TwoPointers**.
+Maybe someone can, but ***I*** can't. I discovered very quickly just how hard deciphering LeetCode yourself is — particularly when you are missing the fundamental algorithms that I guess a lot of undergrads learn in those later classes I never got to experience. I've designed systems for game work that have to be performant (enough for a real-time game environment). I've had to optimize networking bandwidth to keep the client as close to the server state as possible, set up ai batching to keep too much navigation off of tick... but I never really had to make an 'unordered_map', or how useful it is when you need quick container access. I can tell from hearing a customer or user issue what system needs to be built and where the bottlenecks will be... but I couldn't figure out in 45 minutes how to rebuild a wildcard pattern matcher. I’ve built so many bad systems and tools over the years, that I understand the importance of event-driven architecture, or component and decoration led tooling... **but I didn’t know TwoPointers**.
 
-*Oh and yeah, I know Two Pointers now. Still never going to use that at my job.*
+*Oh and yeah, I know Two Pointers now. Not sure I'll ever use that at my job.*
 
-Moral of the story, I'm still not sure exactly what the connection between LeetCode and real engineering concepts are — maybe it makes a bigger difference in big-data environments ... or maybe, I'm just not really an engineer yet?
+Moral of the story, I'm still not sure exactly what the connection between LeetCode and real engineering concepts are — maybe it makes a bigger difference in big-data environments ... or maybe, I'm just not really an engineer yet, and the fundamental concepts behind them are absent in my reportoir.
 
 Possibly I've been just using engineering to get done what I wanted, but never really embraced the field as an identity.
 
@@ -48,7 +48,7 @@ Either way, now I've gone through my personal stages of grief:
 - How could I be so stupid
 - I am and will always be that stupid
 - I need to just keep trudging along working
-- I am a tortoise
+- I am as slow as a tortoise
 
 ### Become Tortoise
 

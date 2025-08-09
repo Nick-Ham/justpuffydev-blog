@@ -2,9 +2,9 @@ import fs from 'fs';
 import path from 'path';
 import crypto from 'crypto';
 
-import {getActivePostMetadataPath, getActivePostsPath} from '@/lib/paths';
-import {getAllPosts} from '@/lib/postDataBuilder';
-import {PostMetadata, PostData} from './types';
+import {getActivePostMetadataPath, getActivePostsPath} from '@/src/paths';
+import {getAllPosts} from '@/src/posts/postDataBuilder';
+import {PostMetadata, PostData} from '../types/types';
 
 export function bakeMetadata(): void {
     const allPosts: PostData[] = getAllPosts();
