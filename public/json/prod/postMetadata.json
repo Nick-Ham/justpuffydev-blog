@@ -1,11 +1,5 @@
 [
    {
-      "id": "failure-amazon-and-the-tortoise",
-      "date": "2025-08-04",
-      "sizeBytes": 7183,
-      "contentHash": "c42a267ca3fc56cb709f2042542563d48d58953f5b274d1e65d337a0864ee48b"
-   },
-   {
       "id": "init-post",
       "date": "2025-08-04",
       "sizeBytes": 2489,
