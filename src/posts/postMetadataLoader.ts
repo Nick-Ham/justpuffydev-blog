@@ -3,7 +3,7 @@ import fs from 'fs';
 import { PostMetadata } from '@/src/types/types';
 import { postMetadataJson } from '@/src/publicDataLibraryPaths';
 
-export function getPostMetadata(): PostMetadata[] {
+export function getPostMetadataCollection(): PostMetadata[] {
 	let posts: PostMetadata[] = [];
 
 	if (fs.existsSync(postMetadataJson)) {

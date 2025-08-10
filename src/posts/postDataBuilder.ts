@@ -8,20 +8,22 @@ import { getActivePostsPath } from '@/src/paths';
 import * as postParserHelper from '@/src/posts/postParserHelper';
 
 export function getPostData(inFileName: string): PostData {
-	const id = inFileName.replace(/\.md$/, '');
+	const id = inFileName.replace(/\.mdx$/, '');
 
-	const fullPath: string = path.join(getActivePostsPath(), `${id}.md`);
+	const fullPath: string = path.join(getActivePostsPath(), `${id}.mdx`);
 	const fileData: string = fs.readFileSync(fullPath, 'utf8');
 
 	const { data, content } = matter(fileData);
 
 	const title: any = data.title;
+	const isPublished: any = data.isPublished;
 	const date: string = postParserHelper.dateToString(postParserHelper.getPostDate(data.date));
 
 	return {
 		id,
 		title,
 		date,
+		isPublished,
 		content
 	};
 }
@@ -31,7 +33,7 @@ export function getAllPosts(): PostData[] {
 
 	const allPostsData: PostData[] = fileNames.map((fileName) => {
 		return getPostData(fileName);
-	});
+	}).filter(postData => postData.isPublished);
 
 	return allPostsData;
 }

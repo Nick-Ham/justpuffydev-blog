@@ -45,6 +45,7 @@ next-env.d.ts
 .vscode/
 
 # devtools
-/posts/dev
-/postMetadata/dev
+/content/posts/dev
+/content/postMetadata/dev
+/content/postBuiltdata/dev
 /public/json/dev

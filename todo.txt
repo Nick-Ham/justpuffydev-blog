@@ -1,0 +1,6 @@
+this is a collection of issues/features that are sorted by priority of when id like to do them.
+
+- convert .md rendering to .mdx
+- add an isPublished field to the frontmatter to prevent a post from being collected by the metadata script
+- add this todo page as a static page mdx (because it would be funny), and incorporate strikethrough.. could use it as a version log
+-

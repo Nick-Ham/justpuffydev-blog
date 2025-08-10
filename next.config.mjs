@@ -1,15 +1,35 @@
-import createMDX from '@next/mdx'
-
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-	// Configure `pageExtensions` to include markdown and MDX files
-	pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
-	// Optionally, add any other Next.js config below
-}
+import createMDX from '@next/mdx';
 
 const withMDX = createMDX({
-	// Add markdown plugins here, as desired
-})
+	// Support .mdx (and .md if you want—omit 'md' if you’re dropping it)
+	extension: /\.mdx?$/,
+	options: {
+		// These only matter if you import .mdx directly as pages/components.
+		// (Your next-mdx-remote build step has its own remark/rehype config.)
+		remarkPlugins: [],
+		rehypePlugins: []
+	}
+});
 
-// Merge MDX config with Next.js config
-export default withMDX(nextConfig)
+/** @type {import('next').NextConfig} */
+const nextConfig = withMDX({
+	// Only include 'md' if you still want markdown pages.
+	pageExtensions: ['mdx', 'tsx', 'ts', 'jsx', 'js'],
+
+	// You can still tweak webpack for OTHER things here.
+	// Just DON'T add your own .mdx rule—@next/mdx already handles it.
+	webpack(config, { isServer }) {
+		// Example: extra aliases or loaders for non-mdx stuff
+		// config.resolve.alias['~'] = path.resolve(__dirname, 'src')
+		return config;
+	},
+
+	// Make server-only built JSON available to your API route in production:
+
+	outputFileTracingIncludes: {
+		'./app/api/fetchPosts/route.ts': ['./content/postBuiltdata']
+	}
+
+});
+
+export default nextConfig;
